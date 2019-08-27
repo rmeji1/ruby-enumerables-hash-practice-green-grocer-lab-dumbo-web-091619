@@ -2,6 +2,10 @@ def consolidate_cart(cart)
   cart.reduce({}) do |memo, (key, value)| 
     if memo[key]
       memo[key][:count] += 1
+    else
+      memo[key] = {
+        
+      }
   end
 end
 
