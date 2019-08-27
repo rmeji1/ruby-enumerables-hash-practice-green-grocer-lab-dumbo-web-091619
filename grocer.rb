@@ -40,7 +40,7 @@ def apply_clearance(cart)
   end
 end
 
-def apply_clearance_if_applicatblie 
+def apply_clearance_if_applicable
 def checkout(cart, coupons)
   # code here
 end
