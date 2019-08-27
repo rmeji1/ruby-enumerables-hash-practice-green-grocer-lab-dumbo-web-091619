@@ -4,6 +4,7 @@ def consolidate_cart(cart)
     value.each do|key, value| 
       memo[key] = value
     end
+    memo
   end
   p new_cart
 end
