@@ -15,7 +15,7 @@ def apply_coupons(cart, coupons)
   for coupon in coupons
     if cart[coupon[:item]]
       number_of_times_to_apply = cart[coupon[:item]][:count] / coupon[:num]
-      if number_of_times_to_apply > 0 do
+      if number_of_times_to_apply > 0 
         cart["#{coupon[:item]} W/COUPON"] = {
           price: coupon[:cost] / coupon[:num],
           clearance: cart[coupon[:item]][:clearance],
