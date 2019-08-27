@@ -14,13 +14,13 @@ end
 def apply_coupons(cart, coupons)
   for coupon in coupons
     if cart[coupon[:item]]
-      cart = coupon_in_cart(coupon, cart)
+      cart = add_coupon_if_applicable(coupon, cart)
     end
   end
   cart
 end
 
-def coupon_in_cart(coupon, cart)
+def add_coupon_if_applicable(coupon, cart)
   item_name = coupon[:item]
   number_of_times_to_apply = cart[item_name][:count] / coupon[:num]
   if number_of_times_to_apply > 0 
