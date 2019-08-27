@@ -1,5 +1,5 @@
 def consolidate_cart(cart)
-  cart.reduce({}) do |memo, item| 
+  cart.reduce({}) do |memo, (key, value)| 
     
   end
 end
