@@ -43,7 +43,7 @@ end
 
 def apply_clearance_if_applicable(item)
   if !!item[:clearance]
-    item[:price] -= item[:price] * 0.2
+    item[:price] -= item[:price] * CLEARANCE_PERCENT
   end
 end
 
