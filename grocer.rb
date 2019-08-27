@@ -12,7 +12,11 @@ def consolidate_cart(cart)
 end
 
 def apply_coupons(cart, coupons)
-  
+  for coupon in coupons
+    if cart[coupon[:item]]
+      puts "We have that item #{coupon[:item]}"
+    end
+  end
 end
 
 def apply_clearance(cart)
