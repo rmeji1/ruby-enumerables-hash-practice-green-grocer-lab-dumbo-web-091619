@@ -57,7 +57,5 @@ def checkout(cart, coupons)
     memo += value[:price] * value[:count]
     memo
   end
-  
   total > 100 ? total -= total  * 0.1 : total
-  
 end
