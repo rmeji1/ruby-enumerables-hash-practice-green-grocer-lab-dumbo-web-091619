@@ -48,5 +48,5 @@ def if_clearance_apply_discount(item)
 end
 
 def checkout(cart, coupons)
-  # code here
+  
 end
