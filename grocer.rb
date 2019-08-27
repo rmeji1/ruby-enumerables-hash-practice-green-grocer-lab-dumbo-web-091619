@@ -3,7 +3,7 @@ def consolidate_cart(cart)
     # value[:count] = 1
     value.each do|key, value|
       if !memo[key]
-         value[:count] = 0
+        value[:count] = 0
         memo[key] = value
       end
       memo[key][:count] += 1
