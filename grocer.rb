@@ -54,7 +54,7 @@ def checkout(cart, coupons)
   apply_clearance(consolidated_cart)
   p consolidated_cart
   consolidated_cart.reduce(0) do |memo, (key, value)|
-    memo += value[:price]
+    memo += value[:price] * value[:count]
     memo
   end
 end
