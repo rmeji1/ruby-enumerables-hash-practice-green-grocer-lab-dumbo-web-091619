@@ -6,7 +6,6 @@ def consolidate_cart(cart)
       value[:count] = 1
       memo[key] = value
     end
-    
   end
 end
 
