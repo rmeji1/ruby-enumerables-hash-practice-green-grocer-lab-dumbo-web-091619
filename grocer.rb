@@ -41,7 +41,7 @@ def apply_clearance(cart)
   end
 end
 
-def if_clearance_apply_percentage(item)
+def if_clearance_apply_discount(item)
   if !!item[:clearance]
     item[:price] -= item[:price] * CLEARANCE_PERCENT
   end
