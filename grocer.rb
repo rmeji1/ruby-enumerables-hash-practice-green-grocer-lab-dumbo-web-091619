@@ -8,7 +8,7 @@ def consolidate_cart(cart)
     #   memo[key] = value
     # end
   end
-  p new_cart
+  # p new_cart
 end
 
 def apply_coupons(cart, coupons)
