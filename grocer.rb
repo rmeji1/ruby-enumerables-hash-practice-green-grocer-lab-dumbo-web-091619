@@ -21,6 +21,7 @@ def apply_coupons(cart, coupons)
 end
 
 def coupon_in_cart(coupon, cart)
+  item_name = 
   number_of_times_to_apply = cart[coupon[:item]][:count] / coupon[:num]
   if number_of_times_to_apply > 0 
     cart["#{coupon[:item]} W/COUPON"] = {
