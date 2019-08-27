@@ -42,7 +42,7 @@ end
 
 def apply_clearance_if_applicable(item)
   if !!item[:clearance]
-    item[:price] *= .02
+    item[:price] *= 0.02
   end
 end
 
