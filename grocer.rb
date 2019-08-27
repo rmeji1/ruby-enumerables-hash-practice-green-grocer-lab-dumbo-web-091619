@@ -18,7 +18,6 @@ def apply_coupons(cart, coupons)
       add_coupon_if_applicable(coupon, cart)
     end
   end
-  cart
 end
 
 def add_coupon_if_applicable(coupon, cart)
