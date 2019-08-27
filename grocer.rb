@@ -28,7 +28,7 @@ def coupon_in_cart(coupon, cart)
       price: coupon[:cost] / coupon[:num],
       clearance: cart[item_name][:clearance],
       count: number_of_times_to_apply * coupon[:num]
-  }
+    }
     cart[coupon[:item]][:count] -= cart["#{coupon[:item]} W/COUPON"][:count]
   end
 end
