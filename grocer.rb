@@ -43,6 +43,7 @@ end
 def apply_clearance_if_applicable(item)
   if !!item[:clearance]
     item[:price] *= .02
+  end
 end
 def checkout(cart, coupons)
   # code here
