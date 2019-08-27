@@ -21,7 +21,7 @@ def apply_coupons(cart, coupons)
           clearance: cart[coupon[:item]][:clearance],
           count: number_of_times_to_apply * coupon[:num]
         }
-        # cart[coupon[:item]][:count] -= cart["#{coupon[:item]} W/COUPON"][:count]
+        cart[coupon[:item]][:count] -= cart["#{coupon[:item]} W/COUPON"][:count]
         p cart
       end
     end
