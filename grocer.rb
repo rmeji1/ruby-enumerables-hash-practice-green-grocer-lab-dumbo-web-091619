@@ -18,7 +18,8 @@ def apply_coupons(cart, coupons)
       if number_of_times_to_apply > 0 do
         cart["#{coupon[:item]} W/COUPON"] ={
           price: coupon[:cost] / coupon[:num],
-          clearance: cart[coupon[:item]][:clearance]
+          clearance: cart[coupon[:item]][:clearance],
+          count: number_of_times_to_apply * coupon[:num]
         }
       end
     end
