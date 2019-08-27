@@ -14,7 +14,7 @@ end
 def apply_coupons(cart, coupons)
   for coupon in coupons
     if cart[coupon[:item]]
-      cart = add_coupon_if_applicable(coupon, cart)
+      add_coupon_if_applicable(coupon, cart)
     end
   end
   cart
@@ -31,7 +31,6 @@ def add_coupon_if_applicable(coupon, cart)
     }
     cart[coupon[:item]][:count] -= cart["#{coupon[:item]} W/COUPON"][:count]
   end
-  cart
 end
 
 
