@@ -1,3 +1,4 @@
+CLEARANCE_PERCENT = 0.2
 def consolidate_cart(cart)
   new_cart = cart.reduce({}) do |memo, value| 
     value.each do|key, value|
