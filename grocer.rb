@@ -14,7 +14,7 @@ end
 def apply_coupons(cart, coupons)
   for coupon in coupons
     if cart[coupon[:item]]
-      coupon_count = cart[coupon[:item]][:count] / coupon[:num]
+      number_of_times_to_apply_coupon = cart[coupon[:item]][:count] / coupon[:num]
       puts "We have that item #{coupon_count}"
     end
   end
