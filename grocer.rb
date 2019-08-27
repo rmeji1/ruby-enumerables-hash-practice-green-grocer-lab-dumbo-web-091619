@@ -14,6 +14,7 @@ end
 def apply_coupons(cart, coupons)
   for coupon in coupons
     if cart[coupon[:item]]
+      coupon[:num]
       puts "We have that item #{coupon[:item]}"
     end
   end
