@@ -31,6 +31,7 @@ def coupon_in_cart(coupon, cart)
     }
     cart[coupon[:item]][:count] -= cart["#{coupon[:item]} W/COUPON"][:count]
   end
+  cart
 end
 
 
