@@ -54,7 +54,7 @@ def checkout(cart, coupons)
   apply_coupons(consolidated_cart, coupons)
   apply_clearance(consolidated_cart)
   
-  consolidated_cart.each_value do |value|
+  consolidated_cart.reduce(0) do |memo, (key, value)
   
-  }
+  end
 end
