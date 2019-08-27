@@ -11,7 +11,6 @@ def consolidate_cart(cart)
     end
     memo
   end
-  p new_cart
 end
 
 def apply_coupons(cart, coupons)
