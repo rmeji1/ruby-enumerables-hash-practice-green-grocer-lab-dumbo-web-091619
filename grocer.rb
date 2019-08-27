@@ -29,6 +29,9 @@ def apply_coupons(cart, coupons)
   cart
 end
 
+def coupon_in_cart(coupon, cart)
+  
+end
 def apply_clearance(cart)
   # code here
 end
