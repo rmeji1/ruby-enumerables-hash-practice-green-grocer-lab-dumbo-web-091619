@@ -14,7 +14,7 @@ end
 def apply_coupons(cart, coupons)
   for coupon in coupons
     if cart[coupon[:item]]
-      coupon_in_cart(coupon, cart)
+      cart = coupon_in_cart(coupon, cart)
     end
   end
   cart
