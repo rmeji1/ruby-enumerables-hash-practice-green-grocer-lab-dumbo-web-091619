@@ -2,13 +2,6 @@ def consolidate_cart(cart)
   new_cart = cart.reduce({}) do |memo, value| 
     # value[:count] = 1
     value.each {|key, value| p key, value}
-    p value
-    # if memo[key]
-    #   memo[key][:count] += 1
-    # else
-    #   value[:count] = 1
-    #   memo[key] = value
-    # end
   end
   # p new_cart
 end
