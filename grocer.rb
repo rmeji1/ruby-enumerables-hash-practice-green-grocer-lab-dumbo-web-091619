@@ -40,6 +40,7 @@ def apply_clearance(cart)
   cart.each_value do |item_details|
     if_clearance_apply_discount(item_details)
   end
+  cart
 end
 
 def if_clearance_apply_discount(item)
