@@ -1,6 +1,6 @@
 def consolidate_cart(cart)
   new_cart = cart.reduce({}) do |memo, (key, value)| 
-    p value
+    p key
     # if memo[key]
     #   memo[key][:count] += 1
     # else
