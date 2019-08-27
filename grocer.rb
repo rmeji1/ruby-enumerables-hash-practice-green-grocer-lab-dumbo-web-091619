@@ -29,7 +29,6 @@ def coupon_in_cart(coupon, cart)
       count: number_of_times_to_apply * coupon[:num]
   }
     cart[coupon[:item]][:count] -= cart["#{coupon[:item]} W/COUPON"][:count]
-    p cart
   end
 end
 
