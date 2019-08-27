@@ -1,7 +1,9 @@
 def consolidate_cart(cart)
   new_cart = cart.reduce({}) do |memo, value| 
     # value[:count] = 1
-    value.each {|key, value| p key, value}
+    value.each do|key, value| p key, value
+      
+    end
   end
   # p new_cart
 end
