@@ -58,6 +58,6 @@ def checkout(cart, coupons)
     memo
   end
   
-  total > 100 ? total * 0.1 : total
+  total > 100 ? total -= total  * 0.1 : total
   
 end
