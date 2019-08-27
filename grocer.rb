@@ -37,11 +37,11 @@ end
 
 def apply_clearance(cart)
   cart.each_value do |value|
-    if_clearance_apply_applicable(value)
+    if_clearance_apply_discount(value)
   end
 end
 
-def apply_clearance_if_applicable(item)
+def if_clearance_apply_percentage(item)
   if !!item[:clearance]
     item[:price] -= item[:price] * CLEARANCE_PERCENT
   end
